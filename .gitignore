@@ -4,5 +4,6 @@ resources/_gen/
 .DS_Store
 Thumbs.db
 PaperMod.zip
+hugo-papermod-site.zip
 _theme_tmp/
 .tools/
