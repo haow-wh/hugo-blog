@@ -1,0 +1,75 @@
+baseURL: "https://sock5gotgo.top/"
+languageCode: "zh-cn"
+title: "5s' blog"
+theme: "PaperMod"
+
+pagination:
+  pagerSize: 10
+
+enableRobotsTXT: true
+enableEmoji: true
+hasCJKLanguage: true
+summaryLength: 140
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  title: "5s' blog"
+  description: "沉心静气，步步为营"
+  author: "5s"
+  defaultTheme: auto
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  comments: false
+  DateFormat: "2006-01-02"
+
+  homeInfoParams:
+    Title: "5s' blog"
+    Content: "沉心静气，步步为营。"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/haow-wh"
+    - name: rss
+      url: "/index.xml"
+
+menu:
+  main:
+    - identifier: posts
+      name: 文章
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 20
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 30
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    noClasses: false
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    style: github
